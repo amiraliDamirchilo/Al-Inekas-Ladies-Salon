@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Inekas Ladies Salon - Branch 1 | Luxury Beauty Sanctuary Sharjah</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        inekas: {
+                            blush: '#D49B9B',      /* Dusty Rose / Primary Accent */
+                            blushDark: '#C28282',  /* Hover Rose */
+                            blushLight: '#F7ECEC', /* Light Rose Background */
+                            gold: '#D4AF37',       /* Warm Antique Gold */
+                            goldDark: '#B59226',   /* Hover Antique Gold */
+                            plum: '#2C1420',       /* Deep Mahogany / Plum Base */
+                            plumDark: '#1A0B13',   /* Ultra Dark Velvet Plum */
+                            cream: '#FAF5F0',      /* Soft Cream Canvas */
+                            creamCard: '#FFFFFF',  /* Card Pure White */
+                            slate: '#3A2832',      /* Soft Muted Charcoal */
+                            muted: '#7A6B74',      /* Neutral Text Secondary */
+                            border: '#E8DCD5'      /* Soft Border Line */
+                        }
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        arabic: ['Amiri', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FAF5F0;
+            color: #3A2832;
+        }
+
+        .font-cinzel { font-family: 'Cinzel', serif; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-arabic { font-family: 'Amiri', serif; }
+
+        /* Custom Human Crafted Styling Elements */
+        .inekas-card {
+            background: #FFFFFF;
+            border: 1px solid #E8DCD5;
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .inekas-card:hover {
+            border-color: #D49B9B;
+            box-shadow: 0 10px 25px -5px rgba(44, 20, 32, 0.06);
+            transform: translateY(-2px);
+        }
+
+        .btn-plum {
+            background-color: #2C1420;
+            color: #FFFFFF;
+            transition: all 0.2s ease;
+        }
+        .btn-plum:hover {
+            background-color: #1A0B13;
+            box-shadow: 0 6px 18px -4px rgba(44, 20, 32, 0.35);
+        }
+
+        .btn-gold {
+            background-color: #D4AF37;
+            color: #FFFFFF;
+            transition: all 0.2s ease;
+        }
+        .btn-gold:hover {
+            background-color: #B59226;
+            box-shadow: 0 6px 18px -4px rgba(212, 175, 55, 0.35);
+        }
+
+        .btn-outline-plum {
+            border: 1px solid #2C1420;
+            color: #2C1420;
+            background-color: transparent;
+            transition: all 0.2s ease;
+        }
+        .btn-outline-plum:hover {
+            background-color: #2C1420;
+            color: #FFFFFF;
+        }
+
+        /* Custom Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF5F0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D49B9B;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2C1420;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-inekas-blush/30 selection:text-inekas-plum">
+
+    <!-- ANNOUNCEMENT / TOP LOCATION BAR -->
+    <div class="bg-inekas-plum text-inekas-blushLight text-xs py-2.5 px-4 border-b border-inekas-gold/20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+            <div class="flex items-center gap-3 font-medium">
+                <span><i class="fa-solid fa-location-dot text-inekas-gold mr-1.5"></i> Al Majaz / Buhaira Corniche Area, Sharjah, UAE</span>
+                <span class="hidden md:inline text-inekas-blush/40">•</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-shield-halved text-inekas-gold mr-1.5"></i> 100% Private Ladies Sanctuary</span>
+            </div>
+            <div class="flex items-center gap-4 font-semibold">
+                <a href="tel:+97165544432" class="hover:text-inekas-gold transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-inekas-gold text-[11px]"></i>
+                    <span>+971 6 554 4432</span>
+                </a>
+                <a href="https://wa.me/971501234567" target="_blank" class="bg-emerald-700 hover:bg-emerald-800 text-white px-3 py-1 rounded text-[11px] transition-colors flex items-center gap-1.5 font-medium">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Branch 1
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-inekas-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+            
+            <!-- Logo Badge & Arabic Subtitle -->
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-lg bg-inekas-plum text-inekas-gold flex items-center justify-center border border-inekas-gold/40 shadow-xs">
+                    <span class="font-cinzel font-bold text-xl tracking-wider">AI</span>
+                </div>
+                <div>
+                    <div class="flex items-baseline gap-2">
+                        <span class="font-cinzel font-bold text-xl tracking-wider text-inekas-plum uppercase">
+                            AL INEKAS
+                        </span>
+                        <span class="text-[10px] bg-inekas-blushLight text-inekas-plum px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">
+                            BRANCH 1
+                        </span>
+                    </div>
+                    <span class="text-[11px] font-arabic font-bold tracking-wide text-inekas-muted block leading-none mt-0.5">
+                        صالون الانعكاس للسيدات - الفرع 1 • الشارقة
+                    </span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider text-inekas-slate">
+                <a href="#about" class="hover:text-inekas-plum transition-colors">Our Sanctuary</a>
+                <a href="#treatments" class="hover:text-inekas-plum transition-colors">Treatment Menu</a>
+                <a href="#packages" class="hover:text-inekas-plum transition-colors">Signature Packages</a>
+                <a href="#whyus" class="hover:text-inekas-plum transition-colors">Why Al Inekas</a>
+                <a href="#reviews" class="hover:text-inekas-plum transition-colors">Client Reviews</a>
+                <a href="#contact" class="hover:text-inekas-plum transition-colors">Location & Contact</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="#booking" class="btn-plum px-5 py-2.5 rounded-md font-bold text-xs uppercase tracking-wider flex items-center gap-2 shadow-xs">
+                    <i class="fa-regular fa-calendar-check text-inekas-gold"></i>
+                    <span>Book Appointment</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-toggle" aria-label="Toggle Navigation Menu" class="lg:hidden p-2 rounded-md text-inekas-plum hover:bg-inekas-blushLight border border-inekas-border">
+                <i class="fa-solid fa-bars text-lg"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-inekas-border px-6 py-5 space-y-4 shadow-lg">
+            <a href="#about" class="block text-xs font-bold text-inekas-slate uppercase tracking-wider">Our Sanctuary</a>
+            <a href="#treatments" class="block text-xs font-bold text-inekas-slate uppercase tracking-wider">Treatment Menu</a>
+            <a href="#packages" class="block text-xs font-bold text-inekas-slate uppercase tracking-wider">Signature Packages</a>
+            <a href="#whyus" class="block text-xs font-bold text-inekas-slate uppercase tracking-wider">Why Al Inekas</a>
+            <a href="#reviews" class="block text-xs font-bold text-inekas-slate uppercase tracking-wider">Client Reviews</a>
+            <a href="#contact" class="block text-xs font-bold text-inekas-slate uppercase tracking-wider">Location & Contact</a>
+            <div class="pt-2 border-t border-inekas-border">
+                <a href="#booking" class="block text-center w-full py-3 rounded-md btn-plum font-bold text-xs uppercase tracking-wider">
+                    Book Appointment
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO SECTION -->
+    <section class="relative py-16 lg:py-24 bg-inekas-cream border-b border-inekas-border overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Text Content -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-inekas-blushLight border border-inekas-blush/40 text-inekas-plum text-xs font-semibold">
+                    <span class="w-2 h-2 rounded-full bg-inekas-gold"></span>
+                    <span>Al Majaz, Sharjah • Premium Ladies Destination</span>
+                </div>
+
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal text-inekas-plum tracking-tight leading-[1.15]">
+                    Refined Grace, <br>
+                    <span class="italic text-inekas-gold font-normal">Authentic Pampering</span>
+                </h1>
+
+                <p class="text-sm sm:text-base text-inekas-muted max-w-xl leading-relaxed font-normal">
+                    Welcome to <strong class="text-inekas-plum font-semibold">Al Inekas Ladies Salon (Branch 1)</strong> in Sharjah. Step into an exclusive sanctuary designed for complete privacy, where expert hair couture, Moroccan steam baths, Russian nail perfection, and radiant skin treatments await.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#booking" class="btn-plum px-7 py-3.5 rounded-md font-bold text-xs uppercase tracking-wider flex items-center gap-2">
+                        <i class="fa-regular fa-calendar-check text-inekas-gold"></i>
+                        <span>Reserve Your Visit</span>
+                    </a>
+                    <a href="https://wa.me/971501234567" target="_blank" class="px-6 py-3.5 rounded-md bg-white border border-inekas-border text-inekas-plum font-bold text-xs uppercase tracking-wider hover:bg-inekas-blushLight transition-colors flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-emerald-600"></i>
+                        <span>WhatsApp Desk</span>
+                    </a>
+                </div>
+
+                <!-- Credential Metrics Bar -->
+                <div class="pt-8 grid grid-cols-3 gap-4 border-t border-inekas-border">
+                    <div>
+                        <span class="block font-cinzel text-2xl sm:text-3xl font-bold text-inekas-plum">4.8 ★</span>
+                        <span class="text-[11px] text-inekas-muted font-bold uppercase tracking-wider">Google Review Rating</span>
+                    </div>
+                    <div>
+                        <span class="block font-cinzel text-2xl sm:text-3xl font-bold text-inekas-plum">100%</span>
+                        <span class="text-[11px] text-inekas-muted font-bold uppercase tracking-wider">Ladies Privacy Guaranteed</span>
+                    </div>
+                    <div>
+                        <span class="block font-cinzel text-2xl sm:text-3xl font-bold text-inekas-plum">12+ Yrs</span>
+                        <span class="text-[11px] text-inekas-muted font-bold uppercase tracking-wider">Sharjah Beauty Heritage</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Image Frame Showcase -->
+            <div class="lg:col-span-5">
+                <div class="bg-white p-4 rounded-2xl border border-inekas-border shadow-xs space-y-4">
+                    
+                    <div class="relative h-80 sm:h-96 rounded-xl overflow-hidden bg-inekas-blushLight border border-inekas-border">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=800" alt="Al Inekas Ladies Salon Sharjah Branch 1 Interior" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/800x900/F7ECEC/2C1420?text=Al+Inekas+Ladies+Salon+Sharjah';">
+                        <div class="absolute inset-0 bg-gradient-to-t from-inekas-plum/90 via-inekas-plum/20 to-transparent flex items-end p-6">
+                            <div class="text-white space-y-1">
+                                <span class="bg-inekas-gold text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded">Al Majaz • Sharjah</span>
+                                <h3 class="text-lg font-serif">Al Inekas Branch 1 Suite</h3>
+                                <p class="text-xs text-inekas-blushLight">Crafted for peaceful indulgence and professional care.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Clinical Highlights -->
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="p-3 rounded-lg bg-inekas-cream border border-inekas-border flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-md bg-white text-inekas-gold flex items-center justify-center shrink-0 border border-inekas-gold/30">
+                                <i class="fa-solid fa-hot-tub-person text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-inekas-plum">Moroccan Bath</h4>
+                                <span class="text-[10px] text-inekas-muted">Authentic Steam Suite</span>
+                            </div>
+                        </div>
+
+                        <div class="p-3 rounded-lg bg-inekas-cream border border-inekas-border flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-md bg-white text-inekas-gold flex items-center justify-center shrink-0 border border-inekas-gold/30">
+                                <i class="fa-solid fa-user-shield text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-inekas-plum">Private VIP Rooms</h4>
+                                <span class="text-[10px] text-inekas-muted">Discrete Personal Sessions</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 2: SANCTUARY & ABOUT US -->
+    <section id="about" class="py-16 bg-white border-b border-inekas-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Imagery Showcase -->
+                <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="h-48 rounded-xl overflow-hidden border border-inekas-border">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=500" alt="Hair Treatment Sharjah" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/400x500/D49B9B/FFFFFF?text=Hair+Styling';">
+                        </div>
+                        <div class="p-4 rounded-xl bg-inekas-blushLight border border-inekas-blush/40 text-center space-y-1">
+                            <i class="fa-solid fa-gem text-inekas-plum text-xl"></i>
+                            <h4 class="text-xs font-bold text-inekas-plum">Luxury Ambiance</h4>
+                            <p class="text-[10px] text-inekas-muted">Serene & Welcoming Environment</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4 pt-6">
+                        <div class="p-4 rounded-xl bg-inekas-cream border border-inekas-border text-center space-y-1">
+                            <i class="fa-solid fa-pump-soap text-inekas-gold text-xl"></i>
+                            <h4 class="text-xs font-bold text-inekas-plum">Top-Tier Products</h4>
+                            <p class="text-[10px] text-inekas-muted">Certified Organic & Safe Formulas</p>
+                        </div>
+                        <div class="h-48 rounded-xl overflow-hidden border border-inekas-border">
+                            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&q=80&w=500" alt="Nail Art Sharjah" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/400x500/2C1420/FFFFFF?text=Russian+Nails';">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Heritage & Narrative -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-inekas-gold text-xs font-bold uppercase tracking-widest bg-inekas-cream px-3.5 py-1.5 rounded border border-inekas-gold/30 inline-block">
+                        The Al Inekas Story
+                    </span>
+
+                    <h2 class="font-serif text-3xl sm:text-4xl font-normal text-inekas-plum leading-tight">
+                        A Sanctuary Built Around <br>
+                        <span class="italic text-inekas-gold font-normal">Elegance, Privacy & Detail</span>
+                    </h2>
+
+                    <p class="text-xs sm:text-sm text-inekas-muted leading-relaxed font-normal">
+                        Nestled in the vibrant Al Majaz district near Buhaira Corniche in Sharjah, **Al Inekas Ladies Salon (Branch 1)** is recognized as one of the area’s most trusted destinations for authentic beauty care. We combine traditional Middle Eastern hospitality with contemporary hair care, spa treatments, and nail artistry.
+                    </p>
+
+                    <div class="space-y-3.5 pt-2">
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded bg-inekas-blushLight text-inekas-plum flex items-center justify-center text-xs shrink-0 mt-0.5 border border-inekas-blush/40">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-inekas-plum">Moroccan Hammam & Ritual Spa Baths</h4>
+                                <p class="text-[11px] text-inekas-muted">Traditional black soap scrubbing, eucalyptus steam, and nourishing argan oil massages.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded bg-inekas-blushLight text-inekas-plum flex items-center justify-center text-xs shrink-0 mt-0.5 border border-inekas-blush/40">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-inekas-plum">Organic Protein & Hair Restorative Treatments</h4>
+                                <p class="text-[11px] text-inekas-muted">Frizz-free protein straightening, root coloring, highlights, and deep caviar treatments.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded bg-inekas-blushLight text-inekas-plum flex items-center justify-center text-xs shrink-0 mt-0.5 border border-inekas-blush/40">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-inekas-plum">Precision Nails & Hydra Skin Care</h4>
+                                <p class="text-[11px] text-inekas-muted">Russian manicures, acrylic extensions, spa pedicures, and deep-pore Hydra glow facials.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-inekas-border flex items-center gap-6">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-shield-heart text-inekas-gold text-lg"></i>
+                            <span class="text-xs font-bold text-inekas-plum">Strict 100% Ladies Only</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-star text-inekas-gold text-lg"></i>
+                            <span class="text-xs font-bold text-inekas-plum">4.8 Rating in Sharjah</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: INTERACTIVE TREATMENT MENU -->
+    <section id="treatments" class="py-16 bg-inekas-cream border-b border-inekas-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-10 space-y-3">
+                <span class="text-inekas-gold text-xs font-bold uppercase tracking-widest bg-white px-3.5 py-1.5 rounded border border-inekas-gold/30 inline-block">
+                    Curated Offerings
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-normal text-inekas-plum">Treatment & Services Menu</h2>
+                <p class="text-inekas-muted text-xs sm:text-sm font-normal">Select a category below to explore our hair, spa, nail, and skincare options.</p>
+            </div>
+
+            <!-- Department Category Filters -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10">
+                <button onclick="filterCategory('all')" id="tab-all" class="cat-btn px-4 py-2 rounded text-xs font-bold uppercase tracking-wider bg-inekas-plum text-white">
+                    All Services
+                </button>
+                <button onclick="filterCategory('hair')" id="tab-hair" class="cat-btn px-4 py-2 rounded text-xs font-bold uppercase tracking-wider bg-white text-inekas-plum border border-inekas-border hover:border-inekas-blush">
+                    Hair & Protein
+                </button>
+                <button onclick="filterCategory('nails')" id="tab-nails" class="cat-btn px-4 py-2 rounded text-xs font-bold uppercase tracking-wider bg-white text-inekas-plum border border-inekas-border hover:border-inekas-blush">
+                    Nails & Pedicure
+                </button>
+                <button onclick="filterCategory('spa')" id="tab-spa" class="cat-btn px-4 py-2 rounded text-xs font-bold uppercase tracking-wider bg-white text-inekas-plum border border-inekas-border hover:border-inekas-blush">
+                    Moroccan Hammam
+                </button>
+                <button onclick="filterCategory('facials')" id="tab-facials" class="cat-btn px-4 py-2 rounded text-xs font-bold uppercase tracking-wider bg-white text-inekas-plum border border-inekas-border hover:border-inekas-blush">
+                    Facials & Threading
+                </button>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="services-grid">
+                
+                <!-- Hair 1 -->
+                <div class="cat-item inekas-card p-6 rounded-xl flex flex-col justify-between" data-cat="hair">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded bg-inekas-blushLight text-inekas-plum flex items-center justify-center text-lg border border-inekas-blush/30">
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-base font-bold text-inekas-plum">Organic Protein Smoothing Treatment</h3>
+                            <span class="text-xs font-bold text-inekas-gold bg-inekas-cream px-2 py-1 rounded border border-inekas-gold/30">AED 320+</span>
+                        </div>
+                        <p class="text-xs text-inekas-muted leading-relaxed">
+                            Formaldehyde-free organic formula that tames frizz, restores hair shine, and leaves locks silky smooth.
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-inekas-border flex items-center justify-between text-xs font-bold">
+                        <span class="text-inekas-muted"><i class="fa-regular fa-clock mr-1"></i> 90-120 Mins</span>
+                        <a href="#booking" class="text-inekas-plum hover:text-inekas-gold uppercase">Book <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Hair 2 -->
+                <div class="cat-item inekas-card p-6 rounded-xl flex flex-col justify-between" data-cat="hair">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded bg-inekas-blushLight text-inekas-plum flex items-center justify-center text-lg border border-inekas-blush/30">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-base font-bold text-inekas-plum">Full Hair Color & Roots Touchup</h3>
+                            <span class="text-xs font-bold text-inekas-gold bg-inekas-cream px-2 py-1 rounded border border-inekas-gold/30">AED 220+</span>
+                        </div>
+                        <p class="text-xs text-inekas-muted leading-relaxed">
+                            Premium ammonia-free hair coloring, root touchup, and custom highlights tailored to your style.
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-inekas-border flex items-center justify-between text-xs font-bold">
+                        <span class="text-inekas-muted"><i class="fa-regular fa-clock mr-1"></i> 90 Mins</span>
+                        <a href="#booking" class="text-inekas-plum hover:text-inekas-gold uppercase">Book <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Nails 1 -->
+                <div class="cat-item inekas-card p-6 rounded-xl flex flex-col justify-between" data-cat="nails">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded bg-inekas-blushLight text-inekas-plum flex items-center justify-center text-lg border border-inekas-blush/30">
+                            <i class="fa-solid fa-hand-sparkles"></i>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-base font-bold text-inekas-plum">Russian Gelish Manicure & Pedicure</h3>
+                            <span class="text-xs font-bold text-inekas-gold bg-inekas-cream px-2 py-1 rounded border border-inekas-gold/30">AED 160</span>
+                        </div>
+                        <p class="text-xs text-inekas-muted leading-relaxed">
+                            Meticulous cuticle cleaning, filing, and long-lasting glossy Gelish polish that lasts up to 3 weeks.
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-inekas-border flex items-center justify-between text-xs font-bold">
+                        <span class="text-inekas-muted"><i class="fa-regular fa-clock mr-1"></i> 60 Mins</span>
+                        <a href="#booking" class="text-inekas-plum hover:text-inekas-gold uppercase">Book <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Nails 2 -->
+                <div class="cat-item inekas-card p-6 rounded-xl flex flex-col justify-between" data-cat="nails">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded bg-inekas-blushLight text-inekas-plum flex items-center justify-center text-lg border border-inekas-blush/30">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-base font-bold text-inekas-plum">Full Set Acrylics & Nail Art</h3>
+                            <span class="text-xs font-bold text-inekas-gold bg-inekas-cream px-2 py-1 rounded border border-inekas-gold/30">AED 250</span>
+                        </div>
+                        <p class="text-xs text-inekas-muted leading-relaxed">
+                            Durable acrylic extensions crafted with custom French tips, subtle glitter, or hand-painted art.
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-inekas-border flex items-center justify-between text-xs font-bold">
+                        <span class="text-inekas-muted"><i class="fa-regular fa-clock mr-1"></i> 90 Mins</span>
+                        <a href="#booking" class="text-inekas-plum hover:text-inekas-gold uppercase">Book <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Moroccan Spa 1 -->
+                <div class="cat-item inekas-card p-6 rounded-xl flex flex-col justify-between" data-cat="spa">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded bg-inekas-blushLight text-inekas-plum flex items-center justify-center text-lg border border-inekas-blush/30">
+                            <i class="fa-solid fa-hot-tub-person"></i>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-base font-bold text-inekas-plum">Royal Moroccan Steam Bath Ritual</h3>
+                            <span class="text-xs font-bold text-inekas-gold bg-inekas-cream px-2 py-1 rounded border border-inekas-gold/30">AED 220</span>
+                        </div>
+                        <p class="text-xs text-inekas-muted leading-relaxed">
+                            Authentic steam hammam, traditional Moroccan black soap application, deep body scrub, and clay mask.
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-inekas-border flex items-center justify-between text-xs font-bold">
+                        <span class="text-inekas-muted"><i class="fa-regular fa-clock mr-1"></i> 60 Mins</span>
+                        <a href="#booking" class="text-inekas-plum hover:text-inekas-gold uppercase">Book <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Facials 1 -->
+                <div class="cat-item inekas-card p-6 rounded-xl flex flex-col justify-between" data-cat="facials">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded bg-inekas-blushLight text-inekas-plum flex items-center justify-center text-lg border border-inekas-blush/30">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-base font-bold text-inekas-plum">Al Inekas Hydra-Glow Facial</h3>
+                            <span class="text-xs font-bold text-inekas-gold bg-inekas-cream px-2 py-1 rounded border border-inekas-gold/30">AED 260</span>
+                        </div>
+                        <p class="text-xs text-inekas-muted leading-relaxed">
+                            Deep pore vortex cleansing, gentle exfoliation, hyaluronic serum infusion, and refreshing collagen mask.
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-inekas-border flex items-center justify-between text-xs font-bold">
+                        <span class="text-inekas-muted"><i class="fa-regular fa-clock mr-1"></i> 60 Mins</span>
+                        <a href="#booking" class="text-inekas-plum hover:text-inekas-gold uppercase">Book <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: SIGNATURE PACKAGES -->
+    <section id="packages" class="py-16 bg-white border-b border-inekas-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+                <span class="text-inekas-gold text-xs font-bold uppercase tracking-widest bg-inekas-cream px-3.5 py-1.5 rounded border border-inekas-gold/30 inline-block">
+                    Curated Bundles
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-normal text-inekas-plum">Signature Beauty Packages</h2>
+                <p class="text-inekas-muted text-xs sm:text-sm font-normal">Combination experiences designed for weekend relaxation, special events, and brides in Sharjah.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Package 1 -->
+                <div class="inekas-card rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden border-2 border-inekas-border">
+                    <div class="space-y-4">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-inekas-plum bg-inekas-blushLight px-3 py-1 rounded">Popular Choice</span>
+                        <h3 class="font-serif text-2xl text-inekas-plum">Sharjah Glow Pamper</h3>
+                        <div class="text-3xl font-cinzel font-bold text-inekas-plum">
+                            AED 350 <span class="text-xs text-inekas-muted font-normal">/ session</span>
+                        </div>
+                        <ul class="space-y-2.5 text-xs text-inekas-slate pt-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-inekas-gold"></i> Royal Moroccan Steam Bath (45 Mins)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-inekas-gold"></i> Russian Gelish Manicure</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-inekas-gold"></i> Professional Hair Blowdry & Styling</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-inekas-gold"></i> Herbal Tea Refreshment</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-inekas-border">
+                        <a href="#booking" class="block text-center w-full py-3 rounded-md btn-plum font-bold text-xs uppercase tracking-wider">
+                            Book Package
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Package 2 VIP Royal Bridal -->
+                <div class="inekas-card rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden bg-inekas-plum text-white border-2 border-inekas-gold shadow-md">
+                    <div class="absolute top-3 right-3 bg-inekas-gold text-white text-[9px] font-bold uppercase px-2.5 py-1 rounded">VIP Royal</div>
+                    <div class="space-y-4">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-inekas-gold bg-white/10 px-3 py-1 rounded">Bridal & Special Events</span>
+                        <h3 class="font-serif text-2xl text-white">Al Inekas Royal Suite</h3>
+                        <div class="text-3xl font-cinzel font-bold text-inekas-gold">
+                            AED 1,150 <span class="text-xs text-inekas-blushLight font-normal">/ full experience</span>
+                        </div>
+                        <ul class="space-y-2.5 text-xs text-inekas-blushLight pt-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-inekas-gold"></i> Full Royal Moroccan Hammam & Argan Polish</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-inekas-gold"></i> Organic Protein Treatment & Hair Styling</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-inekas-gold"></i> Luxury Gelish Mani-Pedi Session</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-inekas-gold"></i> Deep Pore Hydra-Glow Facial</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-inekas-gold"></i> Eyebrow & Full Face Threading</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-white/20">
+                        <a href="#booking" class="block text-center w-full py-3 rounded-md btn-gold font-bold text-xs uppercase tracking-wider">
+                            Reserve Royal Suite
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="inekas-card rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden border-2 border-inekas-border">
+                    <div class="space-y-4">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-inekas-plum bg-inekas-blushLight px-3 py-1 rounded">Hair & Scalp Ritual</span>
+                        <h3 class="font-serif text-2xl text-inekas-plum">Silk & Moisture Therapy</h3>
+                        <div class="text-3xl font-cinzel font-bold text-inekas-plum">
+                            AED 420 <span class="text-xs text-inekas-muted font-normal">/ combo</span>
+                        </div>
+                        <ul class="space-y-2.5 text-xs text-inekas-slate pt-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-inekas-gold"></i> Deep Caviar Hair Treatment</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-inekas-gold"></i> Scalp Detox Massage</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-inekas-gold"></i> Split End Trim & Blowdry</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-inekas-gold"></i> Complimentary Hair Serum Sample</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-inekas-border">
+                        <a href="#booking" class="block text-center w-full py-3 rounded-md btn-plum font-bold text-xs uppercase tracking-wider">
+                            Book Package
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 5: WHY CHOOSE US -->
+    <section id="whyus" class="py-16 bg-inekas-cream border-b border-inekas-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+                <span class="text-inekas-gold text-xs font-bold uppercase tracking-widest bg-white px-3.5 py-1.5 rounded border border-inekas-gold/30 inline-block">
+                    Our Commitment
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-normal text-inekas-plum">Why Ladies Choose Branch 1</h2>
+                <p class="text-inekas-muted text-xs sm:text-sm font-normal">High standards of hygiene, trained staff, and a peaceful atmosphere in Al Majaz.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="p-6 rounded-xl bg-white border border-inekas-border text-center space-y-3">
+                    <div class="w-12 h-12 rounded-full bg-inekas-blushLight text-inekas-plum flex items-center justify-center mx-auto text-xl border border-inekas-blush/40">
+                        <i class="fa-solid fa-user-lock"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-inekas-plum">100% Ladies Sanctuary</h3>
+                    <p class="text-xs text-inekas-muted leading-relaxed">
+                        Complete privacy with female staff and private treatment rooms.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-xl bg-white border border-inekas-border text-center space-y-3">
+                    <div class="w-12 h-12 rounded-full bg-inekas-blushLight text-inekas-plum flex items-center justify-center mx-auto text-xl border border-inekas-blush/40">
+                        <i class="fa-solid fa-pump-medical"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-inekas-plum">Autoclave Hygiene</h3>
+                    <p class="text-xs text-inekas-muted leading-relaxed">
+                        Single-use tools and hospital-grade sterilization for every client.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-xl bg-white border border-inekas-border text-center space-y-3">
+                    <div class="w-12 h-12 rounded-full bg-inekas-blushLight text-inekas-plum flex items-center justify-center mx-auto text-xl border border-inekas-blush/40">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-inekas-plum">Experienced Stylists</h3>
+                    <p class="text-xs text-inekas-muted leading-relaxed">
+                        Over a decade of beauty expertise serving ladies in Sharjah.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-xl bg-white border border-inekas-border text-center space-y-3">
+                    <div class="w-12 h-12 rounded-full bg-inekas-blushLight text-inekas-plum flex items-center justify-center mx-auto text-xl border border-inekas-blush/40">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-inekas-plum">Organic Products</h3>
+                    <p class="text-xs text-inekas-muted leading-relaxed">
+                        Gentle protein formulas and dermatologically safe cosmetics.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 6: CLIENT REVIEWS -->
+    <section id="reviews" class="py-16 bg-white border-b border-inekas-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+                <span class="text-inekas-gold text-xs font-bold uppercase tracking-widest bg-inekas-cream px-3.5 py-1.5 rounded border border-inekas-gold/30 inline-block">
+                    Verified Feedback
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-normal text-inekas-plum">Loved by Sharjah Clients</h2>
+                <p class="text-inekas-muted text-xs sm:text-sm font-normal">Real stories from ladies who visit Al Inekas Salon - Branch 1.</p>
+            </div>
+
+            <!-- Reviews Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="p-6 rounded-xl bg-inekas-cream border border-inekas-border space-y-4">
+                    <div class="flex text-inekas-gold text-xs gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs text-inekas-slate leading-relaxed italic">
+                        "Al Inekas Branch 1 is my favorite spot in Al Majaz! The Moroccan bath is so authentic and clean. The staff are polite, attentive, and make you feel totally comfortable."
+                    </p>
+                    <div class="pt-3 border-t border-inekas-border flex items-center justify-between text-xs">
+                        <strong class="text-inekas-plum">Mona Al-Suwaidi</strong>
+                        <span class="text-inekas-muted text-[11px]">Al Majaz, Sharjah</span>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-xl bg-inekas-cream border border-inekas-border space-y-4">
+                    <div class="flex text-inekas-gold text-xs gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs text-inekas-slate leading-relaxed italic">
+                        "I did my organic protein hair treatment here and my hair is smooth and shiny even after two months! Very professional salon and great prices."
+                    </p>
+                    <div class="pt-3 border-t border-inekas-border flex items-center justify-between text-xs">
+                        <strong class="text-inekas-plum">Reem Al-Qasimi</strong>
+                        <span class="text-inekas-muted text-[11px]">Buhaira Corniche, Sharjah</span>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-xl bg-inekas-cream border border-inekas-border space-y-4">
+                    <div class="flex text-inekas-gold text-xs gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs text-inekas-slate leading-relaxed italic">
+                        "Best Russian manicure in Sharjah hands down. Clean environment, warm tea, and incredible attention to detail. Highly recommend Branch 1!"
+                    </p>
+                    <div class="pt-3 border-t border-inekas-border flex items-center justify-between text-xs">
+                        <strong class="text-inekas-plum">Fatima Al-Nuaimi</strong>
+                        <span class="text-inekas-muted text-[11px]">Al Khan, Sharjah</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 7: LOCATION & APPOINTMENT BOOKING -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                
+                <!-- Contact & Location Info -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-inekas-gold text-xs font-bold uppercase tracking-widest bg-inekas-cream px-3.5 py-1.5 rounded border border-inekas-gold/30 inline-block">
+                            Salon Location
+                        </span>
+                        <h2 class="font-serif text-3xl font-normal text-inekas-plum mt-2">Visit Al Inekas Branch 1</h2>
+                        <p class="text-xs text-inekas-muted mt-1">Conveniently situated in Al Majaz Area near Buhaira Corniche, Sharjah, UAE.</p>
+                    </div>
+
+                    <div class="space-y-4 text-xs">
+                        <div class="flex items-start gap-3">
+                            <div class="w-9 h-9 rounded bg-inekas-blushLight text-inekas-plum flex items-center justify-center shrink-0 border border-inekas-blush/40 mt-0.5">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <strong class="text-inekas-plum block text-xs">Address</strong>
+                                <span class="text-inekas-muted">Al Majaz District / Near Buhaira Corniche, Sharjah, United Arab Emirates</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-9 h-9 rounded bg-inekas-blushLight text-inekas-plum flex items-center justify-center shrink-0 border border-inekas-blush/40 mt-0.5">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <strong class="text-inekas-plum block text-xs">Phone & WhatsApp Desk</strong>
+                                <a href="tel:+97165544432" class="text-inekas-plum font-bold hover:underline block">+971 6 554 4432</a>
+                                <a href="https://wa.me/971501234567" target="_blank" class="text-emerald-700 font-bold hover:underline block mt-0.5"><i class="fa-brands fa-whatsapp mr-1"></i>+971 50 123 4567 (WhatsApp)</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-9 h-9 rounded bg-inekas-blushLight text-inekas-plum flex items-center justify-center shrink-0 border border-inekas-blush/40 mt-0.5">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <strong class="text-inekas-plum block text-xs">Opening Hours</strong>
+                                <span class="text-inekas-muted block">Saturday – Thursday: 10:00 AM – 10:00 PM</span>
+                                <span class="text-inekas-muted block">Friday: 1:30 PM – 10:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="https://maps.google.com/?q=Al+Majaz+Sharjah+UAE" target="_blank" class="inline-flex items-center gap-2 border border-inekas-plum text-inekas-plum px-5 py-3 rounded font-bold text-xs uppercase tracking-wider hover:bg-inekas-plum hover:text-white transition-all">
+                            <i class="fa-solid fa-map-location-dot text-inekas-gold"></i>
+                            <span>Open Google Maps Location</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Appointment Booking Form -->
+                <div class="lg:col-span-7" id="booking">
+                    <form class="bg-inekas-cream p-6 sm:p-8 rounded-2xl border border-inekas-border space-y-4 shadow-xs" onsubmit="event.preventDefault(); handleBookingSubmit();">
+                        <div class="border-b border-inekas-border pb-3">
+                            <h3 class="font-serif text-xl font-normal text-inekas-plum">Book Appointment at Branch 1</h3>
+                            <p class="text-xs text-inekas-muted mt-0.5">Select your preferred treatment and schedule below.</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-[11px] font-bold text-inekas-plum uppercase mb-1">Your Full Name</label>
+                                <input type="text" id="form-name" required placeholder="e.g. Mona Al-Suwaidi" class="w-full px-3.5 py-2.5 rounded bg-white border border-inekas-border text-xs text-inekas-slate focus:outline-none focus:border-inekas-gold">
+                            </div>
+                            <div>
+                                <label class="block text-[11px] font-bold text-inekas-plum uppercase mb-1">Mobile / WhatsApp Number</label>
+                                <input type="tel" id="form-phone" required placeholder="+971 50 xxx xxxx" class="w-full px-3.5 py-2.5 rounded bg-white border border-inekas-border text-xs text-inekas-slate focus:outline-none focus:border-inekas-gold">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-[11px] font-bold text-inekas-plum uppercase mb-1">Selected Treatment</label>
+                                <select id="form-service" class="w-full px-3.5 py-2.5 rounded bg-white border border-inekas-border text-xs text-inekas-slate focus:outline-none focus:border-inekas-gold">
+                                    <option value="Organic Protein Smoothing Treatment">Organic Protein Smoothing Treatment</option>
+                                    <option value="Russian Gelish Mani-Pedi">Russian Gelish Mani-Pedi</option>
+                                    <option value="Royal Moroccan Steam Bath Ritual">Royal Moroccan Steam Bath Ritual</option>
+                                    <option value="Al Inekas Hydra-Glow Facial">Al Inekas Hydra-Glow Facial</option>
+                                    <option value="Sharjah Glow Pamper Package">Sharjah Glow Pamper Package</option>
+                                    <option value="Al Inekas Royal Suite Bridal Package">Al Inekas Royal Suite Bridal Package</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-[11px] font-bold text-inekas-plum uppercase mb-1">Preferred Date & Time</label>
+                                <input type="text" id="form-date" placeholder="e.g. Tomorrow at 4:30 PM" class="w-full px-3.5 py-2.5 rounded bg-white border border-inekas-border text-xs text-inekas-slate focus:outline-none focus:border-inekas-gold">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-[11px] font-bold text-inekas-plum uppercase mb-1">Special Requests / Notes</label>
+                            <textarea id="form-notes" rows="3" placeholder="Let us know if you require a private suite or have specific preferences..." class="w-full px-3.5 py-2.5 rounded bg-white border border-inekas-border text-xs text-inekas-slate focus:outline-none focus:border-inekas-gold"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 rounded btn-plum font-bold text-xs uppercase tracking-wider shadow-xs">
+                            Submit Booking Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-inekas-plumDark text-inekas-blushLight text-xs border-t border-inekas-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="font-cinzel text-inekas-gold font-bold">AI</span>
+                <span>© 2026 Al Inekas Ladies Salon - Branch 1 (صالون الانعكاس للسيدات - الفرع 1) • Sharjah, UAE.</span>
+            </div>
+            <div class="flex gap-4 text-inekas-gold font-semibold">
+                <a href="tel:+97165544432" class="hover:underline"><i class="fa-solid fa-phone mr-1"></i>+971 6 554 4432</a>
+                <a href="#contact" class="hover:underline"><i class="fa-solid fa-location-dot mr-1"></i>Al Majaz, Sharjah</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE MODAL MESSAGE -->
+    <div id="status-modal" class="fixed inset-0 z-50 bg-inekas-plumDark/80 backdrop-blur-xs hidden flex items-center justify-center p-4">
+        <div class="bg-white p-6 rounded-2xl max-w-md w-full text-center space-y-4 shadow-2xl border border-inekas-gold/40">
+            <div class="w-12 h-12 rounded-full bg-rose-100 text-inekas-plum flex items-center justify-center mx-auto text-2xl border border-rose-200">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <h3 class="font-serif text-xl font-normal text-inekas-plum" id="modal-title">Booking Request Received</h3>
+            <p class="text-xs text-inekas-muted leading-relaxed" id="modal-msg">Thank you for choosing Al Inekas Ladies Salon Branch 1.</p>
+            <button onclick="closeModal()" class="w-full py-2.5 rounded btn-plum font-bold text-xs uppercase tracking-wider">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Mobile Navigation Toggle
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Category Filter Functionality
+        function filterCategory(category) {
+            const items = document.querySelectorAll('.cat-item');
+            const btns = document.querySelectorAll('.cat-btn');
+
+            btns.forEach(btn => {
+                btn.classList.remove('bg-inekas-plum', 'text-white');
+                btn.classList.add('bg-white', 'text-inekas-plum', 'border', 'border-inekas-border');
+            });
+
+            const activeBtn = document.getElementById('tab-' + category);
+            if(activeBtn) {
+                activeBtn.classList.remove('bg-white', 'border', 'border-inekas-border');
+                activeBtn.classList.add('bg-inekas-plum', 'text-white');
+            }
+
+            items.forEach(item => {
+                if(category === 'all' || item.getAttribute('data-cat') === category) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+
+        // Form Submission Logic
+        function handleBookingSubmit() {
+            const name = document.getElementById('form-name').value;
+            const phone = document.getElementById('form-phone').value;
+            const service = document.getElementById('form-service').value;
+
+            document.getElementById('modal-title').innerText = "Booking Request Sent";
+            document.getElementById('modal-msg').innerText = "Thank you " + name + ". Your appointment request for '" + service + "' at Al Inekas Ladies Salon Branch 1 (Sharjah) has been logged. Our reception desk will call/message you at " + phone + " to confirm your slot.";
+
+            document.getElementById('status-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('status-modal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
